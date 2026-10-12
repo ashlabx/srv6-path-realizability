@@ -1,0 +1,7 @@
++ ip netns exec sp2 ip -6 route
+2001:db8:12::/64 dev sp2-lf1 proto kernel metric 256 pref medium
+2001:db8:22::/64 dev sp2-lf2 proto kernel metric 256 pref medium
+2001:db8:1001::/48 via 2001:db8:12::1 dev sp2-lf1 metric 1024 pref medium
+2001:db8:1002::/48 via 2001:db8:22::1 dev sp2-lf2 metric 1024 pref medium
+fe80::/64 dev sp2-lf1 proto kernel metric 256 pref medium
+fe80::/64 dev sp2-lf2 proto kernel metric 256 pref medium

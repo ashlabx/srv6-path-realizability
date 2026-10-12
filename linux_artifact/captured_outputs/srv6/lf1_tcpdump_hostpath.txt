@@ -1,0 +1,13 @@
+tcpdump: WARNING: any: That device doesn't support promiscuous mode
+(Promiscuous mode not supported on the "any" device)
+tcpdump: verbose output suppressed, use -v[v]... for full protocol decode
+listening on any, link-type LINUX_SLL2 (Linux cooked v2), snapshot length 262144 bytes
+18:24:06.129329 lf1-sp1 Out IP6 2001:db8:11::1 > 2001:db8:1002:1::13: RT6 (len=2, type=4, segleft=0, last-entry=0, tag=0, [0]2001:db8:1002:1::13) IP 192.168.10.11 > 192.168.11.13: ICMP echo request, id 12255, seq 1, length 64
+18:24:07.151433 lf1-sp1 Out IP6 2001:db8:11::1 > 2001:db8:1002:1::13: RT6 (len=2, type=4, segleft=0, last-entry=0, tag=0, [0]2001:db8:1002:1::13) IP 192.168.10.11 > 192.168.11.13: ICMP echo request, id 12255, seq 2, length 64
+18:24:07.407226 lf1-svc1 M   IP6 fe80::f4a9:fdff:fe21:fafc > ff02::2: ICMP6, router solicitation, length 16
+18:25:12.942526 lf1-h2 M   IP6 fe80::8ccb:79ff:feb8:a49f > ff02::2: ICMP6, router solicitation, length 16
+18:25:12.942539 lf1-h1 Out IP6 fe80::8ccb:79ff:feb8:a49f > ff02::2: ICMP6, router solicitation, length 16
+18:25:12.942544 brA   M   IP6 fe80::8ccb:79ff:feb8:a49f > ff02::2: ICMP6, router solicitation, length 16
+6 packets captured
+6 packets received by filter
+0 packets dropped by kernel

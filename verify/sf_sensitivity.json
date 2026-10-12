@@ -1,0 +1,56 @@
+{
+ "all_to_all": {
+  "srv6_cut_through": [
+   9.8,
+   0.8
+  ],
+  "srv6_store_forward": [
+   8.8,
+   0.8
+  ],
+  "vxlan_steer_store_forward": [
+   4.2,
+   0.9
+  ],
+  "gap_store_forward_pp": [
+   4.6,
+   0.6
+  ]
+ },
+ "incast": {
+  "srv6_cut_through": [
+   0.5,
+   1.4
+  ],
+  "srv6_store_forward": [
+   0.3,
+   1.1
+  ],
+  "vxlan_steer_store_forward": [
+   0.9,
+   1.0
+  ],
+  "gap_store_forward_pp": [
+   -0.6,
+   0.6
+  ]
+ },
+ "bursty": {
+  "srv6_cut_through": [
+   20.3,
+   3.5
+  ],
+  "srv6_store_forward": [
+   9.3,
+   3.4
+  ],
+  "vxlan_steer_store_forward": [
+   8.9,
+   3.0
+  ],
+  "gap_store_forward_pp": [
+   0.4,
+   2.2
+  ]
+ }
+}

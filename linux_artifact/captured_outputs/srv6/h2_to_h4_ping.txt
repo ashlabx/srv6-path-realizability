@@ -1,0 +1,6 @@
++ ip netns exec h2 ping -c 3 192.168.11.14 || true
+PING 192.168.11.14 (192.168.11.14) 56(84) bytes of data.
+
+--- 192.168.11.14 ping statistics ---
+3 packets transmitted, 0 received, 100% packet loss, time 2063ms
+

@@ -1,0 +1,14 @@
++ ip netns exec lf1 ip -6 route
+2001:db8:11::/64 dev lf1-sp1 proto kernel metric 256 pref medium
+2001:db8:12::/64 dev lf1-sp2 proto kernel metric 256 pref medium
+2001:db8:1001:10::1  encap seg6local action End.DX4 nh4 172.16.1.10 dev lo metric 1024 pref medium
+2001:db8:1001::/48 dev lo proto kernel metric 256 pref medium
+2001:db8:1002::/48 metric 1024 pref medium
+	nexthop via 2001:db8:11::2 dev lf1-sp1 weight 1 
+	nexthop via 2001:db8:12::2 dev lf1-sp2 weight 1 
+fe80::/64 dev lf1-sp1 proto kernel metric 256 pref medium
+fe80::/64 dev lf1-sp2 proto kernel metric 256 pref medium
+fe80::/64 dev lf1-h1 proto kernel metric 256 pref medium
+fe80::/64 dev lf1-h2 proto kernel metric 256 pref medium
+fe80::/64 dev lf1-svc1 proto kernel metric 256 pref medium
+fe80::/64 dev brA proto kernel metric 256 pref medium

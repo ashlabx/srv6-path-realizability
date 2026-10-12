@@ -1,0 +1,2 @@
++ ip netns exec lf2 ip -6 route get 2001:db8:1001::1
+2001:db8:1001::1 from :: via 2001:db8:22::2 dev lf2-sp2 src 2001:db8:22::1 metric 1024 pref medium

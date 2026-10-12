@@ -1,0 +1,4 @@
++ ip netns exec lf2 bridge link
+107: lf2-h3@if106: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 master brTenant state forwarding priority 32 cost 2 
+109: lf2-h4@if108: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 master brTenant state forwarding priority 32 cost 2 
+3: vxlan10010: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 master brTenant state forwarding priority 32 cost 100 

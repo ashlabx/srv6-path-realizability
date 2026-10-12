@@ -1,0 +1,5 @@
++ ip netns exec sp1 ip route
+10.0.11.0/30 dev sp1-lf1 proto kernel scope link src 10.0.11.2 
+10.0.21.0/30 dev sp1-lf2 proto kernel scope link src 10.0.21.2 
+10.255.1.1 via 10.0.11.1 dev sp1-lf1 
+10.255.2.1 via 10.0.21.1 dev sp1-lf2 

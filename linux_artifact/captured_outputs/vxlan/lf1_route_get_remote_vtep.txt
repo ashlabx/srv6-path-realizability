@@ -1,0 +1,3 @@
++ ip netns exec lf1 ip route get 10.255.2.1
+10.255.2.1 via 10.0.11.2 dev lf1-sp1 src 10.0.11.1 uid 0 
+    cache 

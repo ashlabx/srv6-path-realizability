@@ -1,0 +1,27 @@
+verify all_to_all             srv6_prog  replica p99   457.662  archived   457.662
+verify all_to_all             vxlan      replica p99   569.564  archived   569.564
+verify bursty_many_to_many    srv6_prog  replica p99   312.517  archived   312.517
+verify bursty_many_to_many    vxlan      replica p99   462.074  archived   462.074
+verify incast                 srv6_prog  replica p99    58.729  archived    58.729
+verify incast                 vxlan      replica p99    91.342  archived    91.342
+workload             all_to_all  bursty_many_to_many  incast
+seed           mean        15.5                 15.5    15.5
+               std          8.8                  8.8     8.8
+               min          1.0                  1.0     1.0
+               max         30.0                 30.0    30.0
+reported_model mean        22.9                 18.3    18.1
+               std         14.3                 10.1    18.3
+               min        -14.1                 -6.5   -28.4
+               max         58.0                 41.6    49.6
+no_bonus       mean         3.2                  5.6     6.9
+               std         17.3                 11.4    20.8
+               min        -39.6                -22.4   -46.1
+               max         44.1                 31.7    43.0
+bonus_only     mean        23.9                 15.2    14.9
+               std          3.3                  0.7     0.8
+               min         17.8                 13.9    12.8
+               max         31.3                 16.6    15.9
+base_p99       mean       602.9                439.2   119.0
+               std         89.8                 37.5    19.5
+               min        463.6                381.1    89.9
+               max        840.2                519.7   154.7

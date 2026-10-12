@@ -1,0 +1,8 @@
++ ip netns exec lf2 ping6 -I 2001:db8:1002::1 -c 2 2001:db8:1001::1
+PING 2001:db8:1001::1 (2001:db8:1001::1) from 2001:db8:1002::1 : 56 data bytes
+64 bytes from 2001:db8:1001::1: icmp_seq=1 ttl=63 time=0.041 ms
+64 bytes from 2001:db8:1001::1: icmp_seq=2 ttl=63 time=0.453 ms
+
+--- 2001:db8:1001::1 ping statistics ---
+2 packets transmitted, 2 received, 0% packet loss, time 1010ms
+rtt min/avg/max/mdev = 0.041/0.247/0.453/0.206 ms

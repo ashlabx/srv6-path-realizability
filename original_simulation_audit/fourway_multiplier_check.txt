@@ -1,0 +1,5 @@
+mode         archived p99  queue  implied factor
+vxlan_ecmp         66.490    0.0          1.0000
+vxlan_prog         63.178    0.0          0.9500
+srv6_ecmp          65.210    0.0          1.0000
+srv6_prog          58.714    0.0          0.9000

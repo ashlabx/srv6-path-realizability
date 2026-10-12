@@ -1,0 +1,7 @@
++ ip netns exec lf2 ip route
+10.0.21.0/30 dev lf2-sp1 proto kernel scope link src 10.0.21.1 
+10.0.22.0/30 dev lf2-sp2 proto kernel scope link src 10.0.22.1 
+10.255.1.1 
+	nexthop via 10.0.21.2 dev lf2-sp1 weight 1 
+	nexthop via 10.0.22.2 dev lf2-sp2 weight 1 
+192.168.11.0/24 dev brTenant proto kernel scope link src 192.168.11.1 

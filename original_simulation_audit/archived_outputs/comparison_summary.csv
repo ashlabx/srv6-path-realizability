@@ -1,0 +1,4 @@
+workload,p99_latency_improvement_pct,p99_fct_improvement_pct,mean_queue_improvement_pct,payload_efficiency_vxlan,payload_efficiency_srv6,spine_imbalance_vxlan,spine_imbalance_srv6
+all_to_all,19.6,19.6,-1.2,0.9662,0.9852,4,0
+incast,35.7,35.7,100.0,0.9662,0.9852,2,0
+bursty_many_to_many,32.4,32.4,32.4,0.9662,0.9852,6,0

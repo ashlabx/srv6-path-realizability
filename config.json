@@ -1,0 +1,15 @@
+{
+  "topology": {"leaves": 4, "spines": 2, "hosts_per_leaf": 4,
+               "host_gbps": 100, "fabric_gbps": 100},
+  "payload_bytes": 4096,
+  "prop_us": 1.0,
+  "seg_proc_ns": 0.0,
+  "vxlan_entropy_fidelity": 0.7,
+  "seeds": 30,
+  "workloads": {
+    "all_to_all": {"rounds": 10, "round_gap_ms": 12.0, "msg_bytes": 4194304, "jitter_us": 50.0},
+    "incast": {"events": 60, "mean_interarrival_ms": 1.0, "fan_in": 8, "msg_bytes": 2097152, "jitter_us": 20.0},
+    "bursty": {"bursts": 80, "mean_interarrival_ms": 0.5, "senders": 4, "receivers": 4,
+               "median_bytes": 1048576, "sigma": 1.0, "max_bytes": 33554432, "jitter_us": 20.0}
+  }
+}

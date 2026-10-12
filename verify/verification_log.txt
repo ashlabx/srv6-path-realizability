@@ -1,0 +1,27 @@
+PASS V1 independent engine matches prsim (all_to_all, vxlan_ecmp)  [exact match with same tie order (max |Δ| 8.7e-19 s); with arbitrary tie order 2 flow(s) differ, p99 |Δ| 0.0e+00 s]
+PASS V1 independent engine matches prsim (all_to_all, vxlan_steer)  [exact match with same tie order (max |Δ| 3.5e-18 s); with arbitrary tie order 4 flow(s) differ, p99 |Δ| 0.0e+00 s]
+PASS V1 independent engine matches prsim (all_to_all, srv6_steer)  [exact match with same tie order (max |Δ| 0.0e+00 s); with arbitrary tie order 0 flow(s) differ, p99 |Δ| 0.0e+00 s]
+PASS V1 independent engine matches prsim (incast, vxlan_ecmp)  [exact match with same tie order (max |Δ| 0.0e+00 s); with arbitrary tie order 0 flow(s) differ, p99 |Δ| 0.0e+00 s]
+PASS V1 independent engine matches prsim (incast, vxlan_steer)  [exact match with same tie order (max |Δ| 0.0e+00 s); with arbitrary tie order 0 flow(s) differ, p99 |Δ| 0.0e+00 s]
+PASS V1 independent engine matches prsim (incast, srv6_steer)  [exact match with same tie order (max |Δ| 0.0e+00 s); with arbitrary tie order 0 flow(s) differ, p99 |Δ| 0.0e+00 s]
+PASS V1 independent engine matches prsim (bursty, vxlan_ecmp)  [exact match with same tie order (max |Δ| 0.0e+00 s); with arbitrary tie order 0 flow(s) differ, p99 |Δ| 0.0e+00 s]
+PASS V1 independent engine matches prsim (bursty, vxlan_steer)  [exact match with same tie order (max |Δ| 2.2e-19 s); with arbitrary tie order 0 flow(s) differ, p99 |Δ| 0.0e+00 s]
+PASS V1 independent engine matches prsim (bursty, srv6_steer)  [exact match with same tie order (max |Δ| 0.0e+00 s); with arbitrary tie order 2 flow(s) differ, p99 |Δ| 0.0e+00 s]
+PASS V2 invariants (all_to_all, vxlan_ecmp, 142% load)  [overlaps=0, FIFO violations=0, FCT<bound=0]
+PASS V2 invariants (all_to_all, srv6_steer, 142% load)  [overlaps=0, FIFO violations=0, FCT<bound=0]
+PASS V2 invariants (incast, vxlan_ecmp, 142% load)  [overlaps=0, FIFO violations=0, FCT<bound=0]
+PASS V2 invariants (incast, srv6_steer, 142% load)  [overlaps=0, FIFO violations=0, FCT<bound=0]
+PASS V2 invariants (bursty, vxlan_ecmp, 142% load)  [overlaps=0, FIFO violations=0, FCT<bound=0]
+PASS V2 invariants (bursty, srv6_steer, 142% load)  [overlaps=0, FIFO violations=0, FCT<bound=0]
+PASS V3 SRv6 realizes every intent (all_to_all)
+PASS V3 SRv6 realizes every intent (bursty)
+PASS V3 SRv6 realizes every intent (incast)
+PASS V3 every steering decision is the argmin of Eq. (3)  [0 of 11040 decisions not optimal]
+PASS V4 100-seed mean inside 30-seed CI (all_to_all)  [30 seeds 9.8 ± 0.8; 100 seeds 9.7 ± 0.4]
+PASS V4 100-seed mean inside 30-seed CI (incast)  [30 seeds 0.5 ± 1.4; 100 seeds -0.0 ± 0.7]
+PASS V4 100-seed mean inside 30-seed CI (bursty)  [30 seeds 20.3 ± 3.5; 100 seeds 20.1 ± 1.9]
+INFO V5 all_to_all: cut-through gain 9.1%, store-and-forward gain 8.2% (10 seeds, same routing decisions)
+INFO V5 bursty: cut-through gain 21.2%, store-and-forward gain 7.6% (10 seeds, same routing decisions)
+PASS V6 table aggregates recomputed from raw runs  [max |Δ| = 3.6e-15]
+
+23/23 checks passed

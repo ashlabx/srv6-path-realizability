@@ -1,0 +1,41 @@
++ ip netns exec lf1 bridge fdb show
+33:33:00:00:00:01 dev brTenant self permanent
+33:33:00:00:00:02 dev brTenant self permanent
+01:00:5e:00:00:6a dev brTenant self permanent
+33:33:00:00:00:6a dev brTenant self permanent
+01:00:5e:00:00:01 dev brTenant self permanent
+33:33:ff:06:44:21 dev brTenant self permanent
+33:33:ff:00:00:00 dev brTenant self permanent
+16:90:d9:95:89:12 dev vxlan10010 master brTenant 
+3a:90:8e:61:39:9f dev vxlan10010 master brTenant 
+92:a5:86:c5:27:6b dev vxlan10010 master brTenant 
+92:2f:a4:66:a1:bd dev vxlan10010 master brTenant 
+3a:db:44:d3:a9:6e dev vxlan10010 vlan 1 master brTenant permanent
+3a:db:44:d3:a9:6e dev vxlan10010 master brTenant permanent
+00:00:00:00:00:00 dev vxlan10010 dst 10.255.2.1 self permanent
+33:33:00:00:00:01 dev lf1-sp1 self permanent
+01:00:5e:00:00:01 dev lf1-sp1 self permanent
+33:33:ff:29:f4:08 dev lf1-sp1 self permanent
+33:33:00:00:00:02 dev lf1-sp1 self permanent
+33:33:ff:00:00:00 dev lf1-sp1 self permanent
+33:33:00:00:00:01 dev lf1-sp2 self permanent
+01:00:5e:00:00:01 dev lf1-sp2 self permanent
+33:33:ff:c4:2b:b8 dev lf1-sp2 self permanent
+33:33:00:00:00:02 dev lf1-sp2 self permanent
+33:33:ff:00:00:00 dev lf1-sp2 self permanent
+3a:f8:61:56:3f:c2 dev lf1-h1 master brTenant 
+2a:45:f9:57:87:31 dev lf1-h1 vlan 1 master brTenant permanent
+2a:45:f9:57:87:31 dev lf1-h1 master brTenant permanent
+33:33:00:00:00:01 dev lf1-h1 self permanent
+01:00:5e:00:00:01 dev lf1-h1 self permanent
+33:33:ff:57:87:31 dev lf1-h1 self permanent
+33:33:00:00:00:02 dev lf1-h1 self permanent
+33:33:ff:00:00:00 dev lf1-h1 self permanent
+8e:cb:79:b8:a4:9f dev lf1-h2 master brTenant 
+7a:27:3b:52:01:78 dev lf1-h2 vlan 1 master brTenant permanent
+7a:27:3b:52:01:78 dev lf1-h2 master brTenant permanent
+33:33:00:00:00:01 dev lf1-h2 self permanent
+01:00:5e:00:00:01 dev lf1-h2 self permanent
+33:33:ff:52:01:78 dev lf1-h2 self permanent
+33:33:00:00:00:02 dev lf1-h2 self permanent
+33:33:ff:00:00:00 dev lf1-h2 self permanent

@@ -1,0 +1,4 @@
+workload,p99_gain_vxlan_prog_vs_vxlan_ecmp_pct,p99_gain_srv6_prog_vs_vxlan_ecmp_pct,incremental_p99_gain_srv6_vs_overlay_under_steering_pct_pts,p99_gain_srv6_ecmp_vs_vxlan_ecmp_pct,payload_eff_vxlan,payload_eff_srv6
+all_to_all,19.2,49.6,30.4,3.2,0.9662,0.9852
+incast,5.0,11.7,6.7,1.9,0.9662,0.9852
+bursty_many_to_many,-1.8,8.0,9.8,2.6,0.9662,0.9852
